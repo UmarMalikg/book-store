@@ -1,0 +1,49 @@
+<section id="books-detail">
+  <h1 class="header">Book List</h1>
+  <div
+    style="display: flex; align-items: center; justify-content: space-between"
+  >
+    <div
+      style="
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #20242d;
+        padding: 0 20px;
+        border-radius: 10px;
+      "
+    >
+      <input
+        type="text"
+        name="search-by-same-author"
+        id="search-book-by-same-author"
+        placeholder="search book by author name"
+        style="width: 300px; outline: none"
+      />
+      <p id="cancel">&Cross;&nbsp;</p>
+      <img
+        src="images/search-icon.png"
+        alt="search icon"
+        id="search-the-author-name"
+        style="width: 30px; height: 30px; cursor: pointer"
+      />
+    </div>
+    <input
+      type="text"
+      name="search"
+      id="search-book-in-table"
+      placeholder="search book"
+    />
+  </div>
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="books-table"></tbody>
+  </table>
+</section>

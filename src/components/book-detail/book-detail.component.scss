@@ -1,0 +1,23 @@
+#books-detail {
+  background-color: #323846;
+  text-align: right;
+  #search-book-in-table {
+    align-items: right;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    th,
+    td {
+      padding: 8px;
+      text-align: left;
+    }
+    #actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
+}

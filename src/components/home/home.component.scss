@@ -1,0 +1,34 @@
+#home {
+  background-color: #323846;
+  padding: 60px;
+  background-image: url("../../assets/images/home-background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  width: 100%;
+  display: flex;
+  align-self: flex-end;
+  #h-description {
+    margin: 0 20px 0 0;
+    align-self: flex-end;
+    p {
+      margin: 10px 0;
+    }
+    h4 {
+      margin: 10px 0;
+    }
+  }
+  #h-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    .h-imgs {
+      height: 200px;
+      width: 120px;
+      object-fit: cover;
+      margin: 0 20px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+<div class="modal" id="update-modal" style="overflow: hidden">
+  <button
+    class="close"
+    id="close-update-modal"
+    style="background-color: red; color: white"
+  >
+    X
+  </button>
+  <div class="modal-content">
+    <form action="submit" method="put" id="update-book-data">
+      <div class="update-s-input">
+        <label for="update-book-title">Title:</label>
+        <input type="text" name="update-book-title" id="update-book-title" />
+      </div>
+      <div class="update-s-input">
+        <label for="update-book-author">Author:</label>
+        <input type="text" name="update-book-author" id="update-book-author" />
+      </div>
+      <div class="update-s-input">
+        <label for="update-book-img">Author:</label>
+        <input type="file" name="update-book-img" id="update-book-img" />
+      </div>
+      <div class="update-s-input">
+        <label for="update-book-price">Author:</label>
+        <input type="number" name="update-book-price" id="update-book-price" />
+      </div>
+      <div style="margin: 0 20px">
+        <label for="update-book-description">Description:</label>
+        <textarea
+          style="
+            border-radius: 10px;
+            min-height: 150px;
+            max-height: 150px;
+            margin-bottom: 20px;
+            padding: 0 10px;
+          "
+          name="update-book-description"
+          id="update-book-description"
+        ></textarea>
+      </div>
+      <div style="text-align: center">
+        <button id="update-book-button" type="submit">Update</button>
+      </div>
+    </form>
+  </div>
+</div>

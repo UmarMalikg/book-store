@@ -1,1 +1,113 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  input {
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 10px;
+    background-color: #20242d;
+    border: none;
+  }
+  section {
+    padding: 0 60px 30px 60px;
+  }
+  .header {
+    text-align: center;
+    padding: 30px;
+    color: #04ecfe;
+    &::after,
+    &::before {
+      content: " --- ";
+      color: #fff;
+    }
+  }
+  textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 200px;
+    border-radius: 5px;
+    background-color: #20242d;
+  }
+  button {
+    padding: 7px 17px;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #04ecfe;
+    border-radius: 15px;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    transition: 1s;
+    &:hover {
+      box-shadow: 0 0 10px 3px rgba(4, 236, 254, 0.5);
+    }
+  }
+  .close {
+    &:hover {
+      box-shadow: 0 0 10px 3px rgba(246, 41, 41, 1);
+    }
+  }
+  #cancel {
+    margin: 0 20px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  #cancel {
+    &::after {
+      content: "  |";
+    }
+  }
+  /* media queries */
+  @media (max-width: 880px) {
+    #home {
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .books {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  @media (max-width: 700px) {
+    .books {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  @media (max-width: 540px) {
+    header {
+      font-size: 10px;
+    }
+    nav h3 {
+      font-size: 16px;
+    }
+    nav ul {
+      gap: 5px;
+    }
+    nav ul a {
+      font-size: 13px;
+    }
+    .h-imgs {
+      height: 150px;
+      width: 90px;
+      margin: 0 5px;
+    }
+    .books {
+      grid-template-columns: 1fr;
+    }
+    .full-name,
+    .contact-details {
+      flex-direction: column;
+      min-width: 100%;
+    }
+    .full-name .single-input,
+    .contact-details .single-input,
+    .full-name .single-input input,
+    .contact-details .single-input input {
+      min-width: 100%;
+    }
+  }
+  .hide {
+    display: none;
+  }
+}

@@ -1,0 +1,14 @@
+header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #323846;
+  background-color: #20242d;
+}
+#search {
+  border: 2px solid #323846;
+}

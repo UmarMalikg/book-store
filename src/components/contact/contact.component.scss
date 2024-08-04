@@ -1,0 +1,33 @@
+#contact {
+  background-color: #323846;
+}
+.form-box {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, 0);
+}
+form {
+  width: 100%;
+}
+.single-input {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.full-name,
+.contact-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+}
+label {
+  font-size: 18px;
+}

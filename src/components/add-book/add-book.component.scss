@@ -1,0 +1,9 @@
+#add-book {
+  background-color: #323846;
+  div {
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+  }
+}

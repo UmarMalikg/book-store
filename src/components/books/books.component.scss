@@ -1,0 +1,30 @@
+#book {
+  background-color: #323846;
+  .books {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 30px;
+    gap: 30px;
+    .book {
+      border: 2px solid #666666;
+      height: 320px;
+      width: 200px;
+      .b-book-img {
+        height: 67%;
+        width: 100%;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .b-name {
+        padding: 10px 0 5px 0;
+      }
+      .b-price {
+        color: #04ecfe;
+        padding-top: 5px;
+      }
+    }
+  }
+}
